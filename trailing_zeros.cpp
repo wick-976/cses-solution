@@ -1,13 +1,18 @@
-class Solution {
-public:
-    int trailingZeroes(int n) {
-        long long div=5;
-        long long ans=0;
-        while(div<=n)
-        {
-            ans+=n/div;
-            div*=5;
-        }
-        return ans;
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+    long long n;
+    cin >> n;
+
+    long long count = 0;
+
+    while (n > 0) {
+        n /= 5;
+        count += n;
     }
-};
+
+    cout << count << endl;
+
+    return 0;
+}
