@@ -14,7 +14,7 @@ vector<string> generate_gc(int n) {
 
     // Step 1: reverse
     vector<string> mirrored;
-    for (int i = prev.size() - 1; i >= 0; i--) {
+    for (int i = (int)prev.size() - 1; i >= 0; i--) {
         mirrored.push_back(prev[i]);
     }
 
@@ -22,12 +22,12 @@ vector<string> generate_gc(int n) {
     vector<string> result;
 
     // Add '0' prefix
-    for (int i = 0; i < prev.size(); i++) {
+    for (size_t i = 0; i < prev.size(); i++) {
         result.push_back("0" + prev[i]);
     }
 
     // Add '1' prefix (to reversed)
-    for (int i = 0; i < mirrored.size(); i++) {
+    for (size_t i = 0; i < mirrored.size(); i++) {
         result.push_back("1" + mirrored[i]);
     }
 
@@ -40,7 +40,7 @@ void solve() {
 
     vector<string> gray_codes = generate_gc(n);
 
-    for (auto gc : gray_codes) {
+    for (const auto &gc : gray_codes) {
         cout << gc << endl;
     }
 }
