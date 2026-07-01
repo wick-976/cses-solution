@@ -1,4 +1,4 @@
-Eight Queens with Blocked Cells (CSES)
+/*Eight Queens with Blocked Cells (CSES)
 
 This project solves the **Eight Queens** problem with an additional constraint:
 some cells of the chessboard are blocked and cannot contain a queen.
@@ -40,6 +40,7 @@ Time & Space Complexity
 using namespace std;
 
 #define nl '\n'
+*/
 
 // Check if a queen can be placed at (r, c)
 bool is_safe(vector<string>& board, int r, int c) {
