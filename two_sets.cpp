@@ -1,3 +1,7 @@
+
+//time complexity: O(n)
+//space complexity: O(n)
+
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -36,3 +40,4 @@ int main() {
 
     return 0;
 }
+
