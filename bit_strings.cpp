@@ -1,4 +1,4 @@
-//explanationn is given in the binary exponentiation.cpp file
+//explanationn is given in the binary exponentiation.cpp file go and refer there for explanation
 
 #include <bits/stdc++.h>
 using namespace std;
